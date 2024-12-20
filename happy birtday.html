@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="happy birtday.css" /> <!-- Fixed the file name -->
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <!-- Tiktok meowish -->
+    <canvas id="c"></canvas>
+
+    <script
+        data-name="BMC-Widget"
+        data-cfasync="false"
+        data-id="er.robin"
+        data-description="Support me on Buy me a coffee!"
+        data-message=""
+        data-color="#BD5FFF"
+        data-position="Right"
+        data-x_margin="18"
+        data-y_margin="18"></script>
+    <script src="happy birtday.js"></script> <!-- Fixed the file name -->
+
+    <audio autoplay loop>
+        <source src="Adele.mp3" type="audio/mpeg">
+        Tu navegador no soporta el audio.
+    </audio>
+
+    <script>
+        // Asegurarse de que el audio se reproduzca después de la interacción del usuario
+        document.addEventListener('click', function() {
+            const audioElement = document.querySelector('audio');
+            audioElement.play();
+        });
+    </script>
+    
+</body>
+</html>

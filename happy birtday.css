@@ -1,0 +1,106 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px castellar;
+  color: #eee;
+  height: 25px;
+  top: calc(100vh - 30px);
+  text-shadow: 0 0 2px blueviolet;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
+}
+span {
+  font-size: 11px;
+}
+p > a:first-of-type {
+  font-size: 20px;
+}
+body {
+  overflow: hidden;
+}
+
+.dialog_Abrir {
+    border: none;
+    display: block;
+    width: max-content;
+    margin: 80px auto;
+    background-color: blueviolet;
+    color: #00ff85;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font: inherit;
+    cursor: pointer; /* Añadido para indicar que es un botón cliqueable */
+}
+
+.dialog_cierre {
+    background-color: darkred;
+    color: white;
+    border: none;
+    font-family: castellar, sans-serif; /* Corregido para usar la sintaxis correcta */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer; /* Añadido para indicar que es un botón cliqueable */
+}
+
+.dialog {
+    border: none;
+    padding: 1rem;
+    width: 80%;
+    max-width: 715px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(8px 8px 14px blueviolet);
+}
+
+.dialog_title {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: Arial, Helventica, sans-serif;
+    color: blueviolet;
+    width: 100%;
+    text-transform: uppercase;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(19),
+       cursor .4s step-end infinite alternate;
+}
+
+.dialog_img {
+    width: min(50%, 300px);
+    display: block;
+    margin: auto;
+    filter: drop-shadow(5px 5px 9px darkred);
+    
+}
+
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyFrames cursor{
+    50%{border-color: transparent;}
+}
+
+@keyFrames typing{
+    from{
+        width: 0;
+    }
+}
